@@ -1,5 +1,6 @@
 # slonik-interceptor-preset
 
+[![Travis build status](http://img.shields.io/travis/gajus/slonik-interceptor-preset/master.svg?style=flat-square)](https://travis-ci.org/gajus/slonik-interceptor-preset)
 [![NPM version](http://img.shields.io/npm/v/slonik-interceptor-preset.svg?style=flat-square)](https://www.npmjs.org/package/slonik-interceptor-preset)
 [![Canonical Code Style](https://img.shields.io/badge/code%20style-canonical-blue.svg?style=flat-square)](https://github.com/gajus/canonical)
 [![Twitter Follow](https://img.shields.io/twitter/follow/kuizinas.svg?style=social&label=Follow)](https://twitter.com/kuizinas)
