@@ -27,7 +27,7 @@ Each interceptor can be selectively enabled/ disabled (see [API](#api)).
 ```js
 import {
   createInterceptors
-} from 'slonik';
+} from 'slonik-interceptor-preset';
 
 ```
 
