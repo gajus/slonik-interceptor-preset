@@ -1,16 +1,16 @@
 // @flow
 
 import {
-  createFieldNameTransformationInterceptor
+  createFieldNameTransformationInterceptor,
 } from 'slonik-interceptor-field-name-transformation';
 import {
-  createQueryNormalisationInterceptor
+  createQueryNormalisationInterceptor,
 } from 'slonik-interceptor-query-normalisation';
 import {
-  createQueryBenchmarkingInterceptor
+  createQueryBenchmarkingInterceptor,
 } from 'slonik-interceptor-query-benchmarking';
 import {
-  createQueryLoggingInterceptor
+  createQueryLoggingInterceptor,
 } from 'slonik-interceptor-query-logging';
 
 /**
@@ -23,20 +23,20 @@ type UserConfigurationType = {|
   +benchmarkQueries: boolean,
   +logQueries: boolean,
   +normaliseQueries: boolean,
-  +transformFieldNames: boolean
+  +transformFieldNames: boolean,
 |};
 
 const defaultConfiguration = {
   benchmarkQueries: false,
   logQueries: true,
   normaliseQueries: true,
-  transformFieldNames: true
+  transformFieldNames: true,
 };
 
 export default (userConfiguration: UserConfigurationType = defaultConfiguration) => {
   const configuration = {
     ...defaultConfiguration,
-    ...userConfiguration
+    ...userConfiguration,
   };
 
   const interceptors = [];
@@ -44,7 +44,7 @@ export default (userConfiguration: UserConfigurationType = defaultConfiguration)
   if (configuration.transformFieldNames) {
     interceptors.push(
       createFieldNameTransformationInterceptor({
-        format: 'CAMEL_CASE'
+        format: 'CAMEL_CASE',
       })
     );
   }
@@ -52,7 +52,7 @@ export default (userConfiguration: UserConfigurationType = defaultConfiguration)
   if (configuration.normaliseQueries) {
     interceptors.push(
       createQueryNormalisationInterceptor({
-        stripComments: true
+        stripComments: true,
       })
     );
   }
