@@ -45,7 +45,7 @@ export default (userConfiguration: UserConfigurationType = defaultConfiguration)
     interceptors.push(
       createFieldNameTransformationInterceptor({
         format: 'CAMEL_CASE',
-      })
+      }),
     );
   }
 
@@ -53,19 +53,19 @@ export default (userConfiguration: UserConfigurationType = defaultConfiguration)
     interceptors.push(
       createQueryNormalisationInterceptor({
         stripComments: true,
-      })
+      }),
     );
   }
 
   if (configuration.benchmarkQueries) {
     interceptors.push(
-      createQueryBenchmarkingInterceptor()
+      createQueryBenchmarkingInterceptor(),
     );
   }
 
   if (configuration.logQueries) {
     interceptors.push(
-      createQueryLoggingInterceptor()
+      createQueryLoggingInterceptor(),
     );
   }
 
