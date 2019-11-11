@@ -19,11 +19,11 @@
     ]
   },
   "dependencies": {
-    "slonik": "^21.0.0",
-    "slonik-interceptor-field-name-transformation": "^1.5.1",
-    "slonik-interceptor-query-benchmarking": "^1.3.8",
-    "slonik-interceptor-query-logging": "^1.3.6",
-    "slonik-interceptor-query-normalisation": "^1.1.8"
+    "slonik": "^21.4.0",
+    "slonik-interceptor-field-name-transformation": "^1.5.2",
+    "slonik-interceptor-query-benchmarking": "^1.3.9",
+    "slonik-interceptor-query-logging": "^1.3.7",
+    "slonik-interceptor-query-normalisation": "^1.1.9"
   },
   "description": "Slonik interceptor preset.",
   "devDependencies": {
