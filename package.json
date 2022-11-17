@@ -59,6 +59,7 @@
   ],
   "license": "BSD-3-Clause",
   "main": "./dist/index.js",
+  "types": "./index.d.ts",
   "name": "slonik-interceptor-preset",
   "nyc": {
     "all": true,
